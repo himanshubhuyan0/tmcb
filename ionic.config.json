@@ -1,0 +1,7 @@
+{
+  "name": "tmcb",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
