@@ -1,0 +1,44 @@
+<!-- <ion-header>
+  <ion-toolbar color="primary">
+    <ion-button size="large" defaultHref="" fill="clear"><ion-icon color="light" name="chevron-back-circle-outline"></ion-icon></ion-button>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content color="primary" fullscreen="true" >
+  <ion-toolbar color="primary" class="paddingtop">
+    <ion-button  slot="start" size="large" (click)="BacktoHome()"  fill="clear"><ion-icon color="light" name="chevron-back-circle-outline"></ion-icon></ion-button>
+    <ion-button  slot="end" size="large" (click)="logout()"  fill="clear"><ion-icon color="light" name="exit-outline"></ion-icon></ion-button>
+  </ion-toolbar>
+  <ion-card class="card" color="primary" fullscreen="true">
+    <ion-card-content>
+      <div class="namebox">
+        <ion-text>
+          <h1>{{userDetails.name}}</h1>
+        </ion-text>
+      </div>
+      <ion-item lines="full" color="primary" >
+        <ion-text slot="start">
+          Investment type:
+        </ion-text>
+        <ion-text><strong>{{userDetails.accounttype}}</strong></ion-text>
+      </ion-item>
+      <ion-item lines="full" color="primary" >
+        <ion-text slot="start">
+          Total Investment:
+        </ion-text>
+        <ion-text><strong>{{userDetails.totalcontribution}}</strong></ion-text>
+      </ion-item>
+      <ion-item lines="full" color="primary" >
+        <ion-text slot="start">
+          Investor Manager:
+        </ion-text>
+        <ion-text><strong>{{userDetails.managername}}</strong></ion-text>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+<ion-footer class="ion-no-border">
+  <ion-toolbar color="tertiary">
+    <ion-button slot="start" size="large" expand="full" fill="clear" color="light"><ion-icon color="light" name="settings-outline"></ion-icon> <p class="settings">Settings</p></ion-button>
+  </ion-toolbar>
+</ion-footer>

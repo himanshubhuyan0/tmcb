@@ -1,0 +1,39 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 1
+    </ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+    <div class="ion-text-center headerlogin">
+      <div class="overlay"></div>
+      <ion-img src="/assets/img/tmcblogo.png"></ion-img>
+    </div>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12">
+          <ion-text color="primary" class="ion-text-center">
+           <h1>Log In</h1>
+          </ion-text>
+          <form (ngSubmit)="logForm()" #loginForm="ngForm">
+            <ion-item>
+              <ion-label position="floating">Email</ion-label>
+              <ion-input type="email" email [(ngModel)]="loginfrm.username" name="username"  required="true"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Password</ion-label>
+              <ion-input type="password" [(ngModel)]="loginfrm.password" name="password" required="true"></ion-input>
+            </ion-item>
+            <ion-button type="submit" expand="full" shape="round" [disabled]="!loginForm.form.valid">Log In</ion-button>
+          </form>
+        </ion-col>
+        <ion-col size="12">
+          <ion-text color="medium" class="ion-text-center" (click)="goToforgotPassword()">
+            <p>Forgot password?</p>
+          </ion-text>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-content>

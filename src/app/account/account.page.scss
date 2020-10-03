@@ -1,0 +1,22 @@
+.paddingtop {
+    padding-top: 30px;
+}
+.settings {
+    font-size: 17px;
+    padding-left: 15px;
+}
+.card {
+    box-shadow:none !important
+}
+.namebox {
+    background-color: #646299;
+    border-left: 6px solid #ffffff;
+    padding: 5px 5px 5px 15px;
+    margin-bottom: 30px;
+}
+ion-item{
+    --inner-padding-end: 0px;
+    --padding-start:0px;
+    --padding-top:0px;
+    --padding-bottom:0px;
+}

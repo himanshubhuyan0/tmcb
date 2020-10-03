@@ -1,0 +1,35 @@
+.headerlogin {
+    background-image: url(/assets/img/loginheadr.jpeg);
+    padding: 125px 30px;
+    border-radius: 0px 0px 60px 60px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    .overlay {
+        background-color: rgba(41, 67, 128, 0.5);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;    
+        border-radius: 0px 0px 60px 60px;
+    }
+    ion-img {
+        z-index: 2;
+        position: relative;
+    }
+}
+h1 {
+    font-size: 30px;
+    font-weight: 900;
+}
+ion-button {
+    margin: 20px 0px 0px;
+}
+ion-text {
+    p {
+        cursor: pointer;
+    }
+}

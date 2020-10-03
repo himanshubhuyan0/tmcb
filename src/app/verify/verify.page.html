@@ -1,0 +1,38 @@
+<!-- <ion-header>
+  <ion-toolbar color="transparent">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref=""></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content fullscreen="true">
+  <div class="ion-text-center headerlogin">
+    <ion-toolbar color="transparent">
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref=""></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+    <div class="overlay"></div>
+    <ion-img src="/assets/img/tmcblogo.png"></ion-img>
+  </div>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <ion-text color="primary" class="ion-text-center">
+         <h1>Security Questions</h1>
+        </ion-text>
+        <form (ngSubmit)="verifysubmitForm()" #verifyForm="ngForm">
+          <ion-item>
+            
+            <ion-input type="text" [(ngModel)]="verifyfrm.ans1" name="ans1" placeholder="{{Q1}}" required="true"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input type="text" [(ngModel)]="verifyfrm.ans2" name="ans1" placeholder="{{Q2}}" required="true"></ion-input>
+          </ion-item>
+          <ion-button color="medium" type="submit" expand="full" shape="round" [disabled]="!verifyForm.form.valid">Submit</ion-button>
+        </form>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,33 @@
+.homebox {
+    background-image: url(/assets/img/homebg.png);
+    padding-top: 30px;
+    margin-bottom: 35px;
+    background-size: 100% 77%;
+    background-repeat: no-repeat;
+    strong {
+        text-transform: uppercase;
+    }
+    .totalpricebox {
+        border-bottom: 2px solid #fff;
+    }
+    .totalpricebox2 {
+        border-bottom: 2px solid #707070;
+    }
+    h2 {
+        margin-top: 0px;
+    }
+    h5 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+.card {
+    box-shadow:none !important;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+ion-list.no-last-border {
+    :last-child {
+      --border-style: none !important;
+    }
+}
