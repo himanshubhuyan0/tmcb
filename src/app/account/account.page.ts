@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { AlertController, LoadingController } from '@ionic/angular';
 import { UserServiceService } from '../services/user-service.service';
 import { StorageService } from '../services/storage.service';
@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
   templateUrl: './account.page.html',
   styleUrls: ['./account.page.scss'],
 })
-export class AccountPage implements OnInit {
+export class AccountPage {
   isLoading = false;
   userDetails:any={};
   constructor(

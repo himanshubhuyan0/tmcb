@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { AlertController, LoadingController } from '@ionic/angular';
 import { UserServiceService } from '../services/user-service.service';
 import { StorageService } from '../services/storage.service';
@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
   templateUrl: './tab4.page.html',
   styleUrls: ['./tab4.page.scss'],
 })
-export class Tab4Page implements OnInit {
+export class Tab4Page {
   isLoading = false;
   userDetails:any;
   constructor(

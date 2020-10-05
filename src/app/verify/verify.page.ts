@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { AlertController, LoadingController } from '@ionic/angular';
 import { UserServiceService } from '../services/user-service.service';
 import { StorageService } from '../services/storage.service';
@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
   templateUrl: './verify.page.html',
   styleUrls: ['./verify.page.scss'],
 })
-export class VerifyPage implements OnInit {
+export class VerifyPage {
   verifyfrm = {ans1:'',ans2:''};
   Q1:any;
   Q2:any;

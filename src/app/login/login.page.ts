@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 import { AlertController, LoadingController } from '@ionic/angular';
 import { UserServiceService } from '../services/user-service.service';
 import { StorageService } from '../services/storage.service';
@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   templateUrl: './login.page.html',
   styleUrls: ['./login.page.scss'],
 })
-export class LoginPage implements OnInit {
+export class LoginPage {
   loginfrm = {username:'',password:''};
   isLoading = false;
   constructor(
@@ -18,9 +18,11 @@ export class LoginPage implements OnInit {
     public alertController: AlertController,
     public loadingController: LoadingController,
   ) {
+    
   }
 
-  ngOnInit() {      
+  ngOnInit() {  
+    this.AutopresentLoading();    
   }
   logForm() {
     this.lodingPresent();
@@ -63,6 +65,15 @@ export class LoginPage implements OnInit {
   async loadingDismiss() {
     this.isLoading = false;
     return await this.loadingController.dismiss().then(() => console.log('dismissed'));
+  }
+  async AutopresentLoading() {
+    const loading = await this.loadingController.create({
+      duration: 500
+    });
+    await loading.present();
+
+    const { role, data } = await loading.onDidDismiss();
+    console.log('Loading dismissed!');
   }
   goToforgotPassword() {
     //this.router.navigate(['profile/tabs/tab1']);

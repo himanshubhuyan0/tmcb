@@ -6,8 +6,8 @@ import { map } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class UserServiceService {
-  getBaseUrl = 'http://localhost/shareholder/apis/v1/getapi';
-  postBaseUrl = 'http://localhost/shareholder/apis/v1/postapi';
+  getBaseUrl = 'http://assamgovjobs.com/shareholder/apis/v1/getapi';
+  postBaseUrl = 'http://assamgovjobs.com/shareholder/apis/v1/postapi';
   constructor(
     public http: HttpClient
   ) { }
