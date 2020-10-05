@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.iitechnology.tmcb" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="io.iitechnology.tmcb" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>TMCB</name>
     <description>An awesome TMCB app.</description>
-    <author email="himanshubhuyan0@gmail.com" href="http://ionicframework.com/">Himanshu Bhuyan</author>
+    <author email="himanshubhuyan0@gmail.com" href="http://assamgovjobs.com/">Himanshu Bhuyan</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
