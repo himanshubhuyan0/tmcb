@@ -1,8 +1,8 @@
 {
-  "name": "tmcb",
-  "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "https://ionicframework.com/",
+  "name": "TMCB",
+  "version": "1.0.1",
+  "author": "tech@tmcb.my",
+  "homepage": "https://tmcb.my/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -44,6 +44,7 @@
     "codelyzer": "^6.0.0",
     "cordova-android": "^9.0.0",
     "cordova-browser": "^6.0.0",
+    "cordova-ios": "^6.1.1",
     "cordova-plugin-device": "^2.0.2",
     "cordova-plugin-ionic-keyboard": "^2.0.5",
     "cordova-plugin-ionic-webview": "^4.2.1",
@@ -63,7 +64,7 @@
     "tslint": "~6.1.0",
     "typescript": "~3.9.5"
   },
-  "description": "An Ionic project",
+  "description": "Mobile app that allow users to monitor and view their basic financial information on the go securely.",
   "cordova": {
     "plugins": {
       "cordova-plugin-whitelist": {},
@@ -78,7 +79,8 @@
     },
     "platforms": [
       "browser",
-      "android"
+      "android",
+      "ios"
     ]
   }
 }

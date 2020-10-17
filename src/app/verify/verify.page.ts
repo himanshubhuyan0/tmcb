@@ -50,6 +50,7 @@ export class VerifyPage {
           }
         });
       }else {
+        this.loadingDismiss();
         this.router.navigate(['']);
       }
     })
