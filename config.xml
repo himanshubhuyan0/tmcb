@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.app.tmcb" version="1.0.3" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="io.app.tmcb" version="1.0.4" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>TMCB</name>
     <description>Mobile app that allow users to monitor and view their basic financial information on the go securely.</description>
     <author email="tech@tmcb.my" href="https://tmcb.my/">Tanah Melayu Consortium Berhad</author>

@@ -19,6 +19,7 @@
     "@angular/platform-browser": "~10.0.0",
     "@angular/platform-browser-dynamic": "~10.0.0",
     "@angular/router": "~10.0.0",
+    "@ionic-native/call-number": "^5.30.0",
     "@ionic-native/core": "^5.0.0",
     "@ionic-native/keyboard": "^5.28.0",
     "@ionic-native/native-storage": "^5.28.0",
@@ -26,6 +27,7 @@
     "@ionic-native/status-bar": "^5.0.0",
     "@ionic/angular": "^5.0.0",
     "cordova-res": "^0.15.1",
+    "jssip": "^3.6.1",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
@@ -41,6 +43,7 @@
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
+    "call-number": "^1.0.1",
     "codelyzer": "^6.0.0",
     "cordova-android": "^9.0.0",
     "cordova-browser": "^6.0.0",
@@ -75,7 +78,8 @@
         "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+"
       },
       "cordova-plugin-nativestorage": {},
-      "cordova-plugin-ionic-keyboard": {}
+      "cordova-plugin-ionic-keyboard": {},
+      "mx.ferreyra.callnumber": {}
     },
     "platforms": [
       "browser",
