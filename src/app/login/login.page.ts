@@ -18,7 +18,6 @@ export class LoginPage {
     public alertController: AlertController,
     public loadingController: LoadingController,
   ) {
-    
   }
 
   ngOnInit() {  
